@@ -35,6 +35,7 @@ cd aiwff-runtime && cp .env.example .env && npm start   # default MOCK_WORKER=1 
 | Repo | What it is | Stars |
 |---|---|---|
 | ⭐ **[aiwff-runtime](https://github.com/zaxardery8011-design/aiwff-runtime)** | The local agent runtime — the engine that runs disciplined agents | ![](https://img.shields.io/github/stars/zaxardery8011-design/aiwff-runtime?style=flat&label=%E2%98%85&color=orange) |
+| **[aiwff-mini](https://github.com/zaxardery8011-design/aiwff-mini)** | A personal brain that installs itself — soul file injected every turn, file-based memory across chats, hash-signed integrity guards | ![](https://img.shields.io/github/stars/zaxardery8011-design/aiwff-mini?style=flat&label=%E2%98%85&color=orange) |
 | **[soplint](https://github.com/zaxardery8011-design/soplint)** | Static SOP-compliance audit for AI work nodes — catches instruction drift over long runs | ![](https://img.shields.io/github/stars/zaxardery8011-design/soplint?style=flat&label=%E2%98%85&color=orange) |
 | **[execution-proofs](https://github.com/zaxardery8011-design/execution-proofs)** | MCP telemetry gateway — forces agents to prove "done" with real files & timestamps | ![](https://img.shields.io/github/stars/zaxardery8011-design/execution-proofs?style=flat&label=%E2%98%85&color=orange) |
 | **[line-persona](https://github.com/zaxardery8011-design/line-persona)** | BYO-AI LINE clone framework — how the runtime reaches real users | ![](https://img.shields.io/github/stars/zaxardery8011-design/line-persona?style=flat&label=%E2%98%85&color=orange) |
@@ -57,6 +58,7 @@ Beyond the core chain above, the rest of the matrix:
 - **[hyperv-mcp](https://github.com/zaxardery8011-design/hyperv-mcp)** — agentic control plane for Microsoft Hyper-V via MCP.
 - **[field-ops-demo](https://github.com/zaxardery8011-design/field-ops-demo)** — single-file HTML demo: mobile clock-in / dispatch / reporting for field teams.
 - **[my-desktop-pet](https://github.com/zaxardery8011-design/my-desktop-pet)** — turn your real pet photo into an animated transparent desktop companion.
+- **[task-ledger](https://github.com/zaxardery8011-design/task-ledger)** — durable single-machine task core that prevents AI agent progress hallucination.
 - **[aiwff-claude-plugin](https://github.com/zaxardery8011-design/aiwff-claude-plugin)** — fleet-aware worker dispatch helpers for Claude Code.
 
 ## 📌 About the pins — 釘選順序
