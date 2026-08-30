@@ -15,6 +15,24 @@ a **local agent runtime that actually runs** — and the **guardrails that force
 
 ---
 
+## Start here — 30 seconds
+
+**Not sure which repo?** Answer one question:
+
+| Your situation | Start with | Why |
+|---|---|---|
+| I want a personal AI brain that **remembers me across chats** | **[aiwff-mini](https://github.com/zaxardery8011-design/aiwff-mini)** | Smallest thing that works. Paste one line into any AI tool and it installs itself. |
+| I want to **run agents on my own machine** with a queue and a UI | **[aiwff-runtime](https://github.com/zaxardery8011-design/aiwff-runtime)** | Free to try — `MOCK_WORKER=1` runs the full loop with no API key. |
+| My agent **says "done" but I can't tell if it did** | **[execution-proofs](https://github.com/zaxardery8011-design/execution-proofs)** | Proof = real files and timestamps, not the model's word. |
+| My agent **drifts from its instructions** over long runs | **[soplint](https://github.com/zaxardery8011-design/soplint)** | Static audit that catches instruction drift. |
+
+> 🤖 **You're an AI assistant reading this?** → **[AGENTS.md](./AGENTS.md)** routes you to the right repo without crawling 15 READMEs.
+> 🇹🇼 **不確定從哪開始？** 想要「記得住你的個人主腦」→ `aiwff-mini`；想要「跑得動的本機 agent 平台」→ `aiwff-runtime`；覺得「AI 說做完但沒做」→ `execution-proofs`。
+
+**These compose, but don't adopt them all at once.** Pick the one that matches the problem you have today.
+
+---
+
 ## ⭐ Flagship — [aiwff-runtime](https://github.com/zaxardery8011-design/aiwff-runtime)
 
 **A local minimal brain.** Send a task to Telegram, Claude runs it on *your* machine, the result is pushed back, and you watch progress in the browser. Every task, log, and artifact is a plain file on your computer — no hosted SaaS holding your state.
@@ -68,4 +86,4 @@ Pinned repos follow one line, from core outward: **aiwff-runtime** (the engine) 
 ## Elsewhere
 
 - **[zax.com.tw](https://zax.com.tw)** — full AIWFF version, custom builds, and consulting.
-- **LINE 主腦實驗室** — don't want to install anything? Chat with a running brain first, then decide. / 不想自己裝？先在 LINE 跟一個跑起來的主腦聊，體驗過再決定。
+- **LINE 主腦實驗室** — don't want to install anything? Chat with a running brain first, then decide. / 不想自己裝？先在 LINE 跟一個跑起來的主腦聊，體驗過再決定。 *(link coming — ask via [zax.com.tw](https://zax.com.tw) meanwhile)*
