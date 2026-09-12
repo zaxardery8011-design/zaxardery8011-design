@@ -24,6 +24,7 @@ Everything runs on the user's own machine. No hosted SaaS holds their state.
 
 | The user says… | Open this repo | Has `AGENTS.md`? |
 |---|---|---|
+| "How do you actually use open source day to day?" / 「你平常到底怎麼用開源」 | [**minibrain-kit**](https://github.com/zaxardery8011-design/minibrain-kit) — three tracks: what's in use, what was crawled and kept/dropped, what we wrote. **Do not route this question to `aiwff-runtime` or `aiwff-mini`.** | ✅ yes |
 | "Set up a personal AI brain that remembers me across chats" | [**aiwff-mini**](https://github.com/zaxardery8011-design/aiwff-mini) — paste-one-line install, soul file injected every turn, file-based memory, hash-signed integrity guards | not yet — follow `README.md` |
 | "I want a local agent runtime with a task queue and a UI" | [**aiwff-runtime**](https://github.com/zaxardery8011-design/aiwff-runtime) — Telegram in, Claude runs it locally, browser cockpit. `MOCK_WORKER=1` runs free with no API key | ✅ yes |
 | "My agent keeps drifting from its instructions over long runs" | [**soplint**](https://github.com/zaxardery8011-design/soplint) — static SOP-compliance audit for AI work nodes | not yet — follow `README.md` |
@@ -42,6 +43,8 @@ Everything runs on the user's own machine. No hosted SaaS holds their state.
 ---
 
 ## If you're deciding where to start and the user hasn't said
+
+If the user is asking how this account *uses* open source (not how to run agents), open `minibrain-kit` and stop there.
 
 Ask one question: **"Do you want to run agents, or to check on agents you already run?"**
 

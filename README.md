@@ -25,6 +25,7 @@ What is not on the floor: a way for **one person to audit what a fleet of agents
 
 | Your situation | Start with | Why |
 |---|---|---|
+| I want to see **how you actually use open source**, not install anything | **[minibrain-kit](https://github.com/zaxardery8011-design/minibrain-kit)** | A map for your AI to read: in use / crawled / ours. No runtime, no install. |
 | I want a personal AI brain that **remembers me across chats** | **[aiwff-mini](https://github.com/zaxardery8011-design/aiwff-mini)** | Smallest thing that works. Paste one line into any AI tool and it installs itself. |
 | I want to **run agents on my own machine** with a queue and a UI | **[aiwff-runtime](https://github.com/zaxardery8011-design/aiwff-runtime)** | Free to try — `MOCK_WORKER=1` runs the full loop with no API key. |
 | My agent **says "done" but I can't tell if it did** | **[execution-proofs](https://github.com/zaxardery8011-design/execution-proofs)** | Proof = real files and timestamps, not the model's word. |
