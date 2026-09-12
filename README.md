@@ -11,7 +11,7 @@ Context compaction, tool loading, parallel calls, subagents: since September 202
 What is not on the floor: a way for **one person to audit what a fleet of agents claims**. That is what these repos are.
 
 > **Three numbers from our own audit. We publish the ugly ones.**
-> 1. Of 63 hard rules in our own governance file, only **5** actually block at the moment of violation. The other 53 are text warnings.
+> 1. Of 63 hard rules in our own governance file, only **5** actually block at the moment of violation (audit of 2026-09-09). The other 53 are text warnings.
 > 2. Lesson repeat rate **5/5**: five lessons written on one day each had a sibling written 119 days earlier.
 > 3. External AI citations spot-checked: **2 of 3 were fabricated**. Real channels, invented titles. Caught by a rule, not by a bigger model.
 >
