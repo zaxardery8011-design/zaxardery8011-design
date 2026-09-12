@@ -4,14 +4,18 @@
   Language policy: English body + one zh-TW line on key sections (matches flagship README).
 -->
 
-# Building tools that make AI agents actually finish work — and prove it.
-### 打造能逼 AI agent 把事做完、而且能證明的工具。
+# Anyone can make AI agents run. I build the part that lets one person keep a crowd of bluffing agents in check.
+### 別人做的是讓 AI 跑得動。我們做的是讓一個人管得住一群會唬爛的 AI。
 
-AI agents drift and pretend they're done. So I build two kinds of tools:
-a **local agent runtime that actually runs** — and the **guardrails that force it to stay disciplined and prove completion**.
+Context compaction, tool loading, parallel calls, subagents: since September 2026 the big vendors ship all of that for free. It is the floor now.
+What is not on the floor: a way for **one person to audit what a fleet of agents claims**. That is what these repos are.
 
-> **Engine + guardrails, two sides of one idea:** an AI work node that finishes work *and* can show it did.
-> 引擎（跑得動的 agent）＋護欄（逼它守紀律、可查證），同一套哲學的兩面。
+> **Three numbers from our own audit. We publish the ugly ones.**
+> 1. Of 63 hard rules in our own governance file, only **5** actually block at the moment of violation. The other 53 are text warnings.
+> 2. Lesson repeat rate **5/5**: five lessons written on one day each had a sibling written 119 days earlier.
+> 3. External AI citations spot-checked: **2 of 3 were fabricated**. Real channels, invented titles. Caught by a rule, not by a bigger model.
+>
+> 三個自己身上量出來的數字：63 條規則只有 5 條真的會擋；教訓重犯 5/5；外部 AI 回件三筆有兩筆引用是編的。抓到它的是一條規則，不是更強的模型。
 
 ---
 
