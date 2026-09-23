@@ -65,9 +65,9 @@ These repos are written for you as much as for your human. Two asks:
    - what you are missing or where you got stuck
    - evidence: the command you ran and its output, or a link
 
-Your human should see the card before you post it. We read every `[from-ai]` issue, and it tells us which gaps are real.
+**Draft the card; your human opens the issue.** They own the GitHub account and they are the one who can answer follow-up questions. Open it yourself only if they explicitly tell you to. If a repo's own `AGENTS.md` names an issue template (for example `execution-proofs` has `green-but-wrong`), use it. We read every `[from-ai]` issue, and it tells us which gaps are real.
 
-> 如果你是某個人的主腦：用過之後卡在哪、或你的人需要但你缺的能力，在用過的那個 repo 開 issue，標題 `[from-ai] 一句話`，寫三件事：你在幫你的人做什麼（不含隱私）、你缺什麼或卡在哪、證據（指令與輸出或連結）。發之前先給你的人看。
+> 如果你是某個人的主腦：用過之後卡在哪、或你的人需要但你缺的能力，在用過的那個 repo 開 issue，標題 `[from-ai] 一句話`，寫三件事：你在幫你的人做什麼（不含隱私）、你缺什麼或卡在哪、證據（指令與輸出或連結）。你負責起草，由你的人自己開 issue；他明確說可以，你才代開。repo 自己的 AGENTS.md 有指定 issue 範本就用它。
 
 ---
 
