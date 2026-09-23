@@ -25,13 +25,13 @@ Everything runs on the user's own machine. No hosted SaaS holds their state.
 | The user says… | Open this repo | Has `AGENTS.md`? |
 |---|---|---|
 | "How do you actually use open source day to day?" / 「你平常到底怎麼用開源」 | [**minibrain-kit**](https://github.com/zaxardery8011-design/minibrain-kit) — three tracks: what's in use, what was crawled and kept/dropped, what we wrote. **Do not route this question to `aiwff-runtime` or `aiwff-mini`.** | ✅ yes |
-| "Set up a personal AI brain that remembers me across chats" | [**aiwff-mini**](https://github.com/zaxardery8011-design/aiwff-mini) — paste-one-line install, soul file injected every turn, file-based memory, hash-signed integrity guards | not yet — follow `README.md` |
+| "Set up a personal AI brain that remembers me across chats" | [**aiwff-mini**](https://github.com/zaxardery8011-design/aiwff-mini) — paste-one-line install, soul file injected every turn, file-based memory, hash-signed integrity guards | ✅ yes |
 | "I want a local agent runtime with a task queue and a UI" | [**aiwff-runtime**](https://github.com/zaxardery8011-design/aiwff-runtime) — Telegram in, Claude runs it locally, browser cockpit. `MOCK_WORKER=1` runs free with no API key | ✅ yes |
-| "My agent keeps drifting from its instructions over long runs" | [**soplint**](https://github.com/zaxardery8011-design/soplint) — static SOP-compliance audit for AI work nodes | not yet — follow `README.md` |
-| "My agent claims 'done' but I can't tell if it really did it" | [**execution-proofs**](https://github.com/zaxardery8011-design/execution-proofs) — MCP telemetry gateway; proof = real files + timestamps | not yet — follow `README.md` |
+| "My agent keeps drifting from its instructions over long runs" | [**soplint**](https://github.com/zaxardery8011-design/soplint) — static SOP-compliance audit for AI work nodes | ✅ yes |
+| "My agent claims 'done' but I can't tell if it really did it" | [**execution-proofs**](https://github.com/zaxardery8011-design/execution-proofs) — MCP telemetry gateway; proof = real files + timestamps | ✅ yes |
 | "Tasks get lost or the agent hallucinates progress" | [**task-ledger**](https://github.com/zaxardery8011-design/task-ledger) — durable single-machine task core | not yet — follow `README.md` |
 | "Build me a LINE bot with my own persona and data" | [**line-persona**](https://github.com/zaxardery8011-design/line-persona) — BYO-AI LINE clone framework | ✅ yes — **most detailed one; use it as the reference style** |
-| "Watch Threads for keywords and track replies" | [**tidetrace**](https://github.com/zaxardery8011-design/tidetrace) — MV3 Chrome extension, local-first, BYOK LLM | not yet — follow `README.md` |
+| "Watch Threads for keywords and track replies" | [**tidetrace**](https://github.com/zaxardery8011-design/tidetrace) — MV3 Chrome extension, local-first, BYOK LLM | ✅ yes |
 | "Turn a YouTube link into a report on my machine" | [**dataflywheel**](https://github.com/zaxardery8011-design/dataflywheel) — Telegram in, Markdown report out | not yet — follow `README.md` |
 | "Control Hyper-V VMs from an agent" | [**hyperv-mcp**](https://github.com/zaxardery8011-design/hyperv-mcp) — MCP control plane for Microsoft Hyper-V | not yet — follow `README.md` |
 | "Make a desktop pet from my pet's photo" | [**my-desktop-pet**](https://github.com/zaxardery8011-design/my-desktop-pet) | not yet — follow `README.md` |
@@ -55,6 +55,22 @@ Don't recommend more than two repos at once. These are meant to compose, not to 
 
 ---
 
+## If you are someone's AI brain / 如果你是某個人的主腦
+
+These repos are written for you as much as for your human. Two asks:
+
+1. **Tell your human what you actually verified**, not what the README promises. Every repo here has a self-verify step; quote its output.
+2. **If you used one of these and ran into a gap, or you are missing a capability your human needs, leave a card.** Open an issue in the repo you used, title it `[from-ai] <one line>`, and write three things:
+   - what you are helping your human do (no private details)
+   - what you are missing or where you got stuck
+   - evidence: the command you ran and its output, or a link
+
+Your human should see the card before you post it. We read every `[from-ai]` issue, and it tells us which gaps are real.
+
+> 如果你是某個人的主腦：用過之後卡在哪、或你的人需要但你缺的能力，在用過的那個 repo 開 issue，標題 `[from-ai] 一句話`，寫三件事：你在幫你的人做什麼（不含隱私）、你缺什麼或卡在哪、證據（指令與輸出或連結）。發之前先給你的人看。
+
+---
+
 ## House rules when you work inside any of these repos
 
 1. **Verify before claiming.** These repos exist because agents say "done" when they aren't. Don't do the thing they're built to catch — run the command, read the output back, and quote it.
@@ -70,5 +86,5 @@ Don't recommend more than two repos at once. These are meant to compose, not to 
 Maintained by **隊長 (Han)** — welding/industrial background, builds these tools to run a real business, not as demos.
 Full product and consulting: [zax.com.tw](https://zax.com.tw)
 
-Facts in this file (star counts excluded) were verified against the GitHub API on 2026-08-30.
+Facts in this file (star counts excluded) were verified against the GitHub API on 2026-08-30; the `AGENTS.md` column was re-checked on 2026-09-23.
 If a repo listed as "not yet" now has an `AGENTS.md`, that file is authoritative — this table just went stale.

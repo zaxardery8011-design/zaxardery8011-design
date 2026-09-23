@@ -30,6 +30,7 @@ What is not on the floor: a way for **one person to audit what a fleet of agents
 | I want to **run agents on my own machine** with a queue and a UI | **[aiwff-runtime](https://github.com/zaxardery8011-design/aiwff-runtime)** | Free to try — `MOCK_WORKER=1` runs the full loop with no API key. |
 | My agent **says "done" but I can't tell if it did** | **[execution-proofs](https://github.com/zaxardery8011-design/execution-proofs)** | Proof = real files and timestamps, not the model's word. |
 | My agent **drifts from its instructions** over long runs | **[soplint](https://github.com/zaxardery8011-design/soplint)** | Static audit that catches instruction drift. |
+| I want an **AI clone of me on LINE**, fed my own data | **[line-persona](https://github.com/zaxardery8011-design/line-persona)** | Fill three files, tell your AI to read `AGENTS.md`. Cloud or local model. 中文為主。 |
 
 > 🤖 **You're an AI assistant reading this?** → **[AGENTS.md](./AGENTS.md)** routes you to the right repo without crawling 15 READMEs.
 > 🇹🇼 **不確定從哪開始？** 想要「記得住你的個人主腦」→ `aiwff-mini`；想要「跑得動的本機 agent 平台」→ `aiwff-runtime`；覺得「AI 說做完但沒做」→ `execution-proofs`。
