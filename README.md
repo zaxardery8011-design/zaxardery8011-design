@@ -91,5 +91,5 @@ Pinned repos follow one line, from core outward: **aiwff-runtime** (the engine) 
 
 ## Elsewhere
 
-- **[zax.com.tw](https://zax.com.tw)** — full AIWFF version, custom builds, and consulting.
-- **LINE 主腦實驗室** — don't want to install anything? Chat with a running brain first, then decide. / 不想自己裝？先在 LINE 跟一個跑起來的主腦聊，體驗過再決定。 *(link coming — ask via [zax.com.tw](https://zax.com.tw) meanwhile)*
+- **[zax.com.tw](https://zax.com.tw/?utm_source=github&utm_medium=readme&utm_campaign=github_profile)** — full AIWFF version, custom builds, and consulting.
+- **LINE 主腦實驗室** — don't want to install anything? Chat with a running brain first, then decide. / 不想自己裝？先在 LINE 跟一個跑起來的主腦聊，體驗過再決定。 *(link coming — ask via [zax.com.tw](https://zax.com.tw/?utm_source=github&utm_medium=readme&utm_campaign=github_profile) meanwhile)*
