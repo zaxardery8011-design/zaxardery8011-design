@@ -4,11 +4,11 @@
   Language policy: English body + one zh-TW line on key sections (matches flagship README).
 -->
 
-# Anyone can make AI agents run. I build the part that lets one person keep a crowd of bluffing agents in check.
-### 別人做的是讓 AI 跑得動。我們做的是讓一個人管得住一群會唬爛的 AI。
+# Finished work has to be checkable. You decide. AI does the work. The engine can change.
+### 結果先講。人拍板，AI 做事，做完要能被驗收。引擎可以換。你電腦裡的資料可以變成你的大腦。
 
-Context compaction, tool loading, parallel calls, subagents: since September 2026 the big vendors ship all of that for free. It is the floor now.
-What is not on the floor: a way for **one person to audit what a fleet of agents claims**. That is what these repos are.
+The big vendors now ship the floor. Compaction, tools, parallel calls, subagents. Since September 2026 that part is free.
+What these repos add is the receipt. You decide. AI does the work. Finished work has to be checkable. Files on your computer can become your brain.
 
 > **Three numbers from our own audit. We publish the ugly ones.**
 > 1. Of 63 hard rules in our own governance file, only **5** actually block at the moment of violation (audit of 2026-09-09). The other 53 are text warnings.
@@ -21,10 +21,12 @@ What is not on the floor: a way for **one person to audit what a fleet of agents
 
 ## Start here — 30 seconds
 
-**Not sure which repo?** Answer one question:
+**Not sure which repo?** Answer one question first. 你要確認 AI 真的做完嗎？
 
 | Your situation | Start with | Why |
 |---|---|---|
+| I want to confirm a routine actually finished | **[grok-bot-routines-tw](https://github.com/zaxardery8011-design/grok-bot-routines-tw)** | Many guides teach scheduling. This one adds the check. The row has to be on the automation list. |
+| I want a daily dig that skips holes already solved | **[dig-loop](https://github.com/zaxardery8011-design/dig-loop)** | The bot digs one domain. Solved items are not collected again. A person decides what is worth doing. |
 | I want to see **how you actually use open source**, not install anything | **[minibrain-kit](https://github.com/zaxardery8011-design/minibrain-kit)** | A map for your AI to read: in use / crawled / ours. No runtime, no install. |
 | I want a personal AI brain that **remembers me across chats** | **[aiwff-mini](https://github.com/zaxardery8011-design/aiwff-mini)** | Smallest thing that works. Paste one line into any AI tool and it installs itself. |
 | I want to **run agents on my own machine** with a queue and a UI | **[aiwff-runtime](https://github.com/zaxardery8011-design/aiwff-runtime)** | Free to try — `MOCK_WORKER=1` runs the full loop with no API key. |
@@ -33,7 +35,7 @@ What is not on the floor: a way for **one person to audit what a fleet of agents
 | I want an **AI clone of me on LINE**, fed my own data | **[line-persona](https://github.com/zaxardery8011-design/line-persona)** | Fill three files, tell your AI to read `AGENTS.md`. Cloud or local model. 中文為主。 |
 
 > 🤖 **You're an AI assistant reading this?** → **[AGENTS.md](./AGENTS.md)** routes you to the right repo without crawling 15 READMEs.
-> 🇹🇼 **不確定從哪開始？** 想要「記得住你的個人主腦」→ `aiwff-mini`；想要「跑得動的本機 agent 平台」→ `aiwff-runtime`；覺得「AI 說做完但沒做」→ `execution-proofs`。
+> 🇹🇼 **不確定從哪開始？** 先問你要確認 AI 真的做完嗎。要。例行看 `grok-bot-routines-tw`。每天挖洞看 `dig-loop`。想要記得住你的個人主腦再看 `aiwff-mini`。想要本機任務跑台再看 `aiwff-runtime`。
 
 **These compose, but don't adopt them all at once.** Pick the one that matches the problem you have today.
 
@@ -41,7 +43,9 @@ What is not on the floor: a way for **one person to audit what a fleet of agents
 
 ## ⭐ Flagship — [aiwff-runtime](https://github.com/zaxardery8011-design/aiwff-runtime)
 
-**A local minimal brain.** Send a task to Telegram, Claude runs it on *your* machine, the result is pushed back, and you watch progress in the browser. Every task, log, and artifact is a plain file on your computer — no hosted SaaS holding your state.
+**Each task leaves a receipt. The engine can change.** Send a task. The worker runs on your machine. The result is a file you can open. Then Telegram. Then Claude. This build runs a mock worker, or Claude CLI. An OpenAI-compatible endpoint is optional and off by default. Gemini and Codex are not wired as workers here. Your files stay on your computer.
+
+**每件任務留收據。引擎可以換。** 先看到做完的檔。再接 Telegram。再接 Claude。這版跑的是 mock，或 Claude CLI。OpenAI 相容端點是選用，預設關閉。Gemini 與 Codex 這版沒接成 worker。檔在你的電腦上。
 
 ```bash
 git clone https://github.com/zaxardery8011-design/aiwff-runtime
@@ -78,12 +82,12 @@ An agent you can trust isn't one model call — it's an **engine that runs** wra
 Beyond the core chain above, the rest of the matrix:
 
 - **[zax-site](https://github.com/zaxardery8011-design/zax-site)** — zax.com.tw landing page (Next.js 16 + Tailwind v4).
-- **[dataflywheel](https://github.com/zaxardery8011-design/dataflywheel)** — send a YouTube URL via Telegram, get a Markdown report on your own machine.
-- **[hyperv-mcp](https://github.com/zaxardery8011-design/hyperv-mcp)** — agentic control plane for Microsoft Hyper-V via MCP.
+- **[dataflywheel](https://github.com/zaxardery8011-design/dataflywheel)** (archived). Send a YouTube URL via Telegram, get a Markdown report on your own machine.
+- **[hyperv-mcp](https://github.com/zaxardery8011-design/hyperv-mcp)** (archived). Agentic control plane for Microsoft Hyper-V via MCP.
 - **[field-ops-demo](https://github.com/zaxardery8011-design/field-ops-demo)** — single-file HTML demo: mobile clock-in / dispatch / reporting for field teams.
 - **[my-desktop-pet](https://github.com/zaxardery8011-design/my-desktop-pet)** — turn your real pet photo into an animated transparent desktop companion.
 - **[task-ledger](https://github.com/zaxardery8011-design/task-ledger)** — durable single-machine task core that prevents AI agent progress hallucination.
-- **[aiwff-claude-plugin](https://github.com/zaxardery8011-design/aiwff-claude-plugin)** — fleet-aware worker dispatch helpers for Claude Code.
+- **[aiwff-claude-plugin](https://github.com/zaxardery8011-design/aiwff-claude-plugin)** (archived). Fleet-aware worker dispatch helpers for Claude Code.
 
 ## 📌 About the pins — 釘選順序
 

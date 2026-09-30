@@ -24,6 +24,8 @@ Everything runs on the user's own machine. No hosted SaaS holds their state.
 
 | The user says… | Open this repo | Has `AGENTS.md`? |
 |---|---|---|
+| 「你要確認 AI 真的做完嗎」 and it is one routine, not a dig loop | [**grok-bot-routines-tw**](https://github.com/zaxardery8011-design/grok-bot-routines-tw). Phone or desktop. The automation list row is the check. | ✅ yes |
+| 「你要確認 AI 真的做完嗎」 and it is a daily dig against a solved list | [**dig-loop**](https://github.com/zaxardery8011-design/dig-loop). Dig one domain. Skip solved holes. A person decides what is worth doing. | ✅ yes |
 | "How do you actually use open source day to day?" / 「你平常到底怎麼用開源」 | [**minibrain-kit**](https://github.com/zaxardery8011-design/minibrain-kit) — three tracks: what's in use, what was crawled and kept/dropped, what we wrote. **Do not route this question to `aiwff-runtime` or `aiwff-mini`.** | ✅ yes |
 | "Set up a personal AI brain that remembers me across chats" | [**aiwff-mini**](https://github.com/zaxardery8011-design/aiwff-mini) — paste-one-line install, soul file injected every turn, file-based memory, hash-signed integrity guards | ✅ yes |
 | "I want a local agent runtime with a task queue and a UI" | [**aiwff-runtime**](https://github.com/zaxardery8011-design/aiwff-runtime) — Telegram in, Claude runs it locally, browser cockpit. `MOCK_WORKER=1` runs free with no API key | ✅ yes |
@@ -32,10 +34,10 @@ Everything runs on the user's own machine. No hosted SaaS holds their state.
 | "Tasks get lost or the agent hallucinates progress" | [**task-ledger**](https://github.com/zaxardery8011-design/task-ledger) — durable single-machine task core | not yet — follow `README.md` |
 | "Build me a LINE bot with my own persona and data" | [**line-persona**](https://github.com/zaxardery8011-design/line-persona) — BYO-AI LINE clone framework | ✅ yes — **most detailed one; use it as the reference style** |
 | "Watch Threads for keywords and track replies" | [**tidetrace**](https://github.com/zaxardery8011-design/tidetrace) — MV3 Chrome extension, local-first, BYOK LLM | ✅ yes |
-| "Turn a YouTube link into a report on my machine" | [**dataflywheel**](https://github.com/zaxardery8011-design/dataflywheel) — Telegram in, Markdown report out | not yet — follow `README.md` |
-| "Control Hyper-V VMs from an agent" | [**hyperv-mcp**](https://github.com/zaxardery8011-design/hyperv-mcp) — MCP control plane for Microsoft Hyper-V | not yet — follow `README.md` |
+| "Turn a YouTube link into a report on my machine" | [**dataflywheel**](https://github.com/zaxardery8011-design/dataflywheel) (archived). Do not start new work here. | archived |
+| "Control Hyper-V VMs from an agent" | [**hyperv-mcp**](https://github.com/zaxardery8011-design/hyperv-mcp) (archived). Do not start new work here. | archived |
 | "Make a desktop pet from my pet's photo" | [**my-desktop-pet**](https://github.com/zaxardery8011-design/my-desktop-pet) | not yet — follow `README.md` |
-| "Dispatch workers across machines from Claude Code" | [**aiwff-claude-plugin**](https://github.com/zaxardery8011-design/aiwff-claude-plugin) | not yet — follow `README.md` |
+| "Dispatch workers across machines from Claude Code" | [**aiwff-claude-plugin**](https://github.com/zaxardery8011-design/aiwff-claude-plugin) (archived). Do not start new work here. | archived |
 
 **Not code — don't send users here for tooling:**
 `zax-site` (the zax.com.tw landing page), `zax-social-assets` (brand files), `field-ops-demo` (a single-file HTML demo, no README yet).
@@ -44,9 +46,14 @@ Everything runs on the user's own machine. No hosted SaaS holds their state.
 
 ## If you're deciding where to start and the user hasn't said
 
-If the user is asking how this account *uses* open source (not how to run agents), open `minibrain-kit` and stop there.
+Ask this first: **「你要確認 AI 真的做完嗎」**
 
-Ask one question: **"Do you want to run agents, or to check on agents you already run?"**
+- One routine. They need the automation list to show the row. → `grok-bot-routines-tw`
+- A daily dig that must skip holes already solved. → `dig-loop`
+
+If they are not asking that, and they are asking how this account *uses* open source (not how to run agents), open `minibrain-kit` and stop there.
+
+Then ask: **"Do you want to run agents, or to check on agents you already run?"**
 
 - **run** → `aiwff-mini` if they want the smallest thing that works; `aiwff-runtime` if they want a queue and a UI.
 - **check** → `execution-proofs` if the problem is "it says done but isn't"; `soplint` if the problem is "it stops following instructions"; `task-ledger` if the problem is "work disappears".
@@ -87,4 +94,5 @@ Maintained by **隊長 (Han)** — welding/industrial background, builds these t
 Full product and consulting: [zax.com.tw](https://zax.com.tw)
 
 Facts in this file (star counts excluded) were verified against the GitHub API on 2026-08-30; the `AGENTS.md` column was re-checked on 2026-09-23.
+Archive flags for `dataflywheel`, `hyperv-mcp`, and `aiwff-claude-plugin`, plus the two new routes `dig-loop` and `grok-bot-routines-tw`, were checked with `gh repo view` on 2026-09-30. All three archive flags were `isArchived: true`. The two new repos were not archived.
 If a repo listed as "not yet" now has an `AGENTS.md`, that file is authoritative — this table just went stale.
