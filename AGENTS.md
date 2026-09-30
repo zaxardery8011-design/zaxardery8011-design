@@ -1,4 +1,4 @@
-# AGENTS.md — entry point for AI assistants
+# AGENTS.md. Entry point for AI assistants
 
 > You are an AI coding assistant (Claude Code / Codex / Cursor / any file-reading agent) and your user
 > landed on `github.com/zaxardery8011-design`. **Read this file first.** It tells you which repo to open
@@ -10,13 +10,13 @@
 
 ## What this account is
 
-**Local-first tooling for AI agents that actually finish work — and can prove it.**
+**Local tools for work you can check.**
 
 Two halves of one idea:
-- **the engine** — a runtime that runs agents on your own machine (`aiwff-runtime`, `aiwff-mini`)
-- **the guardrails** — tooling that forces those agents to stay disciplined and prove completion (`soplint`, `execution-proofs`, `task-ledger`)
+- **the engine**. A runtime that runs agents on your own machine (`aiwff-runtime`, `aiwff-mini`)
+- **the guardrails**. Tooling that forces those agents to stay disciplined and prove completion (`soplint`, `execution-proofs`, `task-ledger`)
 
-Everything runs on the user's own machine. No hosted SaaS holds their state.
+Everything runs on the user's own machine. 任務狀態在使用者自己的檔裡。
 
 ---
 
@@ -26,20 +26,20 @@ Everything runs on the user's own machine. No hosted SaaS holds their state.
 |---|---|---|
 | 「你要確認 AI 真的做完嗎」 and it is one routine, not a dig loop | [**grok-bot-routines-tw**](https://github.com/zaxardery8011-design/grok-bot-routines-tw). Phone or desktop. The automation list row is the check. | ✅ yes |
 | 「你要確認 AI 真的做完嗎」 and it is a daily dig against a solved list | [**dig-loop**](https://github.com/zaxardery8011-design/dig-loop). Dig one domain. Skip solved holes. A person decides what is worth doing. | ✅ yes |
-| "How do you actually use open source day to day?" / 「你平常到底怎麼用開源」 | [**minibrain-kit**](https://github.com/zaxardery8011-design/minibrain-kit) — three tracks: what's in use, what was crawled and kept/dropped, what we wrote. **Do not route this question to `aiwff-runtime` or `aiwff-mini`.** | ✅ yes |
-| "Set up a personal AI brain that remembers me across chats" | [**aiwff-mini**](https://github.com/zaxardery8011-design/aiwff-mini) — paste-one-line install, soul file injected every turn, file-based memory, hash-signed integrity guards | ✅ yes |
-| "I want a local agent runtime with a task queue and a UI" | [**aiwff-runtime**](https://github.com/zaxardery8011-design/aiwff-runtime) — Telegram in, Claude runs it locally, browser cockpit. `MOCK_WORKER=1` runs free with no API key | ✅ yes |
-| "My agent keeps drifting from its instructions over long runs" | [**soplint**](https://github.com/zaxardery8011-design/soplint) — static SOP-compliance audit for AI work nodes | ✅ yes |
-| "My agent claims 'done' but I can't tell if it really did it" | [**execution-proofs**](https://github.com/zaxardery8011-design/execution-proofs) — MCP telemetry gateway; proof = real files + timestamps | ✅ yes |
-| "Tasks get lost or the agent hallucinates progress" | [**task-ledger**](https://github.com/zaxardery8011-design/task-ledger) — durable single-machine task core | not yet — follow `README.md` |
-| "Build me a LINE bot with my own persona and data" | [**line-persona**](https://github.com/zaxardery8011-design/line-persona) — BYO-AI LINE clone framework | ✅ yes — **most detailed one; use it as the reference style** |
-| "Watch Threads for keywords and track replies" | [**tidetrace**](https://github.com/zaxardery8011-design/tidetrace) — MV3 Chrome extension, local-first, BYOK LLM | ✅ yes |
+| "How do you actually use open source day to day?" / 「你平常到底怎麼用開源」 | [**minibrain-kit**](https://github.com/zaxardery8011-design/minibrain-kit). Three tracks: what's in use, what was crawled and kept/dropped, what we wrote. **Do not route this question to `aiwff-runtime` or `aiwff-mini`.** | ✅ yes |
+| "Set up a personal AI brain that remembers me across chats" | [**aiwff-mini**](https://github.com/zaxardery8011-design/aiwff-mini). Paste-one-line install, soul file injected every turn, file-based memory, hash-signed integrity guards | ✅ yes |
+| "I want a local agent runtime with a task queue and a UI" | [**aiwff-runtime**](https://github.com/zaxardery8011-design/aiwff-runtime). 這版可以跑 mock，或 Claude CLI。OpenAI 相容端點預設關閉。 | ✅ yes |
+| "My agent keeps drifting from its instructions over long runs" | [**soplint**](https://github.com/zaxardery8011-design/soplint). Static SOP-compliance audit for AI work nodes | ✅ yes |
+| "My agent claims 'done' but I can't tell if it really did it" | [**execution-proofs**](https://github.com/zaxardery8011-design/execution-proofs). MCP telemetry gateway; proof = real files + timestamps | ✅ yes |
+| "Tasks get lost or the agent hallucinates progress" | [**task-ledger**](https://github.com/zaxardery8011-design/task-ledger). Durable single-machine task core | not yet. Follow `README.md` |
+| "Build me a LINE bot with my own persona and data" | [**line-persona**](https://github.com/zaxardery8011-design/line-persona). BYO-AI LINE clone framework | ✅ yes. **Most detailed one; use it as the reference style** |
+| "Watch Threads for keywords and track replies" | [**tidetrace**](https://github.com/zaxardery8011-design/tidetrace). MV3 Chrome extension, local-first, BYOK LLM | ✅ yes |
 | "Turn a YouTube link into a report on my machine" | [**dataflywheel**](https://github.com/zaxardery8011-design/dataflywheel) (archived). Do not start new work here. | archived |
 | "Control Hyper-V VMs from an agent" | [**hyperv-mcp**](https://github.com/zaxardery8011-design/hyperv-mcp) (archived). Do not start new work here. | archived |
-| "Make a desktop pet from my pet's photo" | [**my-desktop-pet**](https://github.com/zaxardery8011-design/my-desktop-pet) | not yet — follow `README.md` |
+| "Make a desktop pet from my pet's photo" | [**my-desktop-pet**](https://github.com/zaxardery8011-design/my-desktop-pet) | not yet. Follow `README.md` |
 | "Dispatch workers across machines from Claude Code" | [**aiwff-claude-plugin**](https://github.com/zaxardery8011-design/aiwff-claude-plugin) (archived). Do not start new work here. | archived |
 
-**Not code — don't send users here for tooling:**
+**Not code. Don't send users here for tooling:**
 `zax-site` (the zax.com.tw landing page), `zax-social-assets` (brand files), `field-ops-demo` (a single-file HTML demo, no README yet).
 
 ---
@@ -62,7 +62,7 @@ Don't recommend more than two repos at once. These are meant to compose, not to 
 
 ---
 
-## If you are someone's AI brain / 如果你是某個人的主腦
+## 如果你是某人的 AI 助理。先報你真的驗過的輸出。issue 由人開。
 
 These repos are written for you as much as for your human. Two asks:
 
@@ -74,15 +74,15 @@ These repos are written for you as much as for your human. Two asks:
 
 **Draft the card; your human opens the issue.** They own the GitHub account and they are the one who can answer follow-up questions. Open it yourself only if they explicitly tell you to. If a repo's own `AGENTS.md` names an issue template (for example `execution-proofs` has `green-but-wrong`), use it. We read every `[from-ai]` issue, and it tells us which gaps are real.
 
-> 如果你是某個人的主腦：用過之後卡在哪、或你的人需要但你缺的能力，在用過的那個 repo 開 issue，標題 `[from-ai] 一句話`，寫三件事：你在幫你的人做什麼（不含隱私）、你缺什麼或卡在哪、證據（指令與輸出或連結）。你負責起草，由你的人自己開 issue；他明確說可以，你才代開。repo 自己的 AGENTS.md 有指定 issue 範本就用它。
+> 如果你是某人的 AI 助理。先報你真的驗過的輸出。issue 由人開。用過之後卡在哪、或你的人需要但你缺的能力，在用過的那個 repo 開 issue，標題 `[from-ai] 一句話`，寫三件事：你在幫你的人做什麼（不含隱私）、你缺什麼或卡在哪、證據（指令與輸出或連結）。你負責起草，由你的人自己開 issue；他明確說可以，你才代開。repo 自己的 AGENTS.md 有指定 issue 範本就用它。
 
 ---
 
 ## House rules when you work inside any of these repos
 
-1. **Verify before claiming.** These repos exist because agents say "done" when they aren't. Don't do the thing they're built to catch — run the command, read the output back, and quote it.
+1. **Verify before claiming.** These repos exist because agents say "done" when they aren't. Don't do the thing they're built to catch. Run the command, read the output back, and quote it.
 2. **Minimal change.** Every repo here is deliberately small. Don't add abstractions, error handling, or features the user didn't ask for.
-3. **Ask for secrets, never invent them.** API keys, channel tokens, webhook URLs — if it's missing, ask. A placeholder that looks real is worse than an empty field.
+3. **Ask for secrets, never invent them.** API keys, channel tokens, webhook URLs. If it's missing, ask. A placeholder that looks real is worse than an empty field.
 4. **Local-first is a constraint, not a preference.** Don't introduce a hosted service dependency to "simplify" something.
 5. **If a repo has its own `AGENTS.md`, that file wins** over anything written here.
 
@@ -90,9 +90,9 @@ These repos are written for you as much as for your human. Two asks:
 
 ## Provenance
 
-Maintained by **隊長 (Han)** — welding/industrial background, builds these tools to run a real business, not as demos.
+Maintained by **隊長 (Han)**. Welding/industrial background, builds these tools to run a real business, not as demos.
 Full product and consulting: [zax.com.tw](https://zax.com.tw)
 
 Facts in this file (star counts excluded) were verified against the GitHub API on 2026-08-30; the `AGENTS.md` column was re-checked on 2026-09-23.
 Archive flags for `dataflywheel`, `hyperv-mcp`, and `aiwff-claude-plugin`, plus the two new routes `dig-loop` and `grok-bot-routines-tw`, were checked with `gh repo view` on 2026-09-30. All three archive flags were `isArchived: true`. The two new repos were not archived.
-If a repo listed as "not yet" now has an `AGENTS.md`, that file is authoritative — this table just went stale.
+If a repo listed as "not yet" now has an `AGENTS.md`, that file is authoritative. This table just went stale.
