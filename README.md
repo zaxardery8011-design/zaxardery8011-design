@@ -54,6 +54,19 @@ cd aiwff-runtime && cp .env.example .env && npm start   # default MOCK_WORKER=1,
 
 **預設 mock 不需要 API key。要叫 Claude CLI 真的跑，要用你自己的 Claude 帳號。**
 
+### Windows one-click install (trial). Windows 一鍵安裝（試用版）
+
+Paste these two lines into PowerShell. It downloads portable Node, Git and PowerShell at pinned versions and checks each file's SHA256. Then it installs aiwff-runtime, soplint and execution-proofs and runs a health check. `done` with exit code 0 means it is installed. Your login token stays in the local `.env` and is never printed. Stuck? Paste the red lines into [Issues](https://github.com/zaxardery8011-design/aiwff-runtime/issues).
+
+```powershell
+iwr -UseBasicParsing https://raw.githubusercontent.com/zaxardery8011-design/aiwff-runtime/master/install.ps1 -OutFile install.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1 -Name demo
+```
+
+It asks once whether to start at sign-in. Enter means yes. Add `-SkipAutostart` if you do not want that. No admin rights needed.
+
+在 PowerShell 貼這兩行。它會下載免安裝的 Node、Git、PowerShell，裝好 aiwff-runtime、soplint、execution-proofs，最後自己做健康檢查。看到 done、結束碼 0 就是裝好了。登入用的 token 只存在本機 .env，不會印出來。它會問一次要不要開機自動啟動，直接按 Enter 就是要；不想要就加 `-SkipAutostart`。卡住請把紅字貼到 Issues。
+
 → **[See how it runs](https://github.com/zaxardery8011-design/aiwff-runtime#quick-start)**
 
 ---
